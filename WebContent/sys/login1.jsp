@@ -1,0 +1,40 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+	<meta charset="UTF-8">
+
+    <link rel="stylesheet" href="css/login.css">
+    <script type="text/javascript" src="js/jquery.min.js"></script>
+	<title>后台登陆</title>
+</head>
+<body>
+	<div id="login_top">
+		<div id="welcome">
+			欢迎使用立信二手交易平台管理系统
+		</div>
+		<div id="back">
+			<a href="#" style="background-color: #808080">返回首页</a>&nbsp;&nbsp; | &nbsp;&nbsp;
+			<a href="#">帮助</a>
+		</div>
+	</div>
+	<div id="login_center">
+		<div id="login_area">
+			<div id="login_form">
+				<form action="${pageContext.request.contextPath }/admin?method=login" method="post">
+					<div id="login_tip">
+						用户登录&nbsp;&nbsp;UserLogin
+					</div>
+					<div><input type="text" class="uid"></div>
+					<div><input type="text" class="upwd"></div>
+					<div id="btn_area">
+						<input type="submit"  name="submit" id="sub_btn" value="登&nbsp;&nbsp;录" 
+                            style="color: #000000; background-color: #C0C0C0;">&nbsp;&nbsp;
+						
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+</body>
+</html>
